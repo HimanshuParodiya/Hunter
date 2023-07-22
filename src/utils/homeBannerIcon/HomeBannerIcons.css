@@ -1,0 +1,19 @@
+.homeBannerIcon__container {
+    background-color: #111;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+
+
+}
+
+.homeBannerIcon__icon {
+    font-size: 3.5rem;
+}
+
+.homeBannerIcons__title {
+    font-size: 1.3rem;
+}

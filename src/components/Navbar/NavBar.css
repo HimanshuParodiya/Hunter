@@ -1,0 +1,49 @@
+.navbar {
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+
+}
+
+h1.navbar__logo {
+    font-size: 4em;
+}
+
+.mavbar__menu {
+    position: relative;
+}
+
+.navbar__hamburgerMenu {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.navbar__menuBox {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 18rem;
+    padding: 2rem 3rem;
+    background-color: #242424;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-image-slice: 1;
+}
+
+.navbar__ul {
+    font-size: 1.6rem;
+
+}
+
+.navbar__li {
+    padding: 1rem 0;
+}
+
+.navbar__a {
+    color: #fff;
+
+}
