@@ -1,0 +1,96 @@
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 10, 10, 0.8);
+    /* z-index: 99999; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+
+
+
+}
+
+.registration__form {
+    width: 30vw;
+    padding: 2.4rem;
+    position: relative;
+    background-color: #242424;
+    border-radius: 2rem;
+}
+
+
+.registration__form::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -1.5%;
+    left: -1%;
+    height: 103%;
+    width: 102%;
+
+    background: linear-gradient(to right, #f32170,
+            #ff6b08, #cf23cf, #eedd44);
+    ;
+    border-radius: 2.4rem;
+}
+
+.registrationForm__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
+.registrationForm__form>form {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+.registrationForm__form>form>input {
+    width: 100%;
+    padding: 2rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: #111;
+}
+
+.registrationForm__loginButton {
+    width: 100%;
+    padding: 1.4rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.goFor__signup {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+
+.goFor__signup:hover {
+    text-decoration: underline;
+}
+
+.closeForm {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+}

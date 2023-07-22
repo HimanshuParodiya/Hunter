@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeBanner.css";
 import HomeBannericons from "../../../utils/homeBannerIcon/HomeBannericons";
 import {
@@ -9,8 +9,14 @@ import {
   FcRatings,
   FcStatistics,
 } from "react-icons/fc";
+import Authantication from "../../Authantication/Authantication";
+import { useDispatch, useSelector } from "react-redux";
+import { showForm } from "../../../Store/Slice/FormSlice";
 
 const HomeBanner = () => {
+  const data = useSelector((state) => state.form.showForm);
+  console.log(data);
+  const dispatch = useDispatch();
   return (
     <div className="homwBanner__container">
       <h1 className="homeBanner__heading">
@@ -35,7 +41,13 @@ const HomeBanner = () => {
         <HomeBannericons icon={<FcBullish />} title="Premium Airdrops" />
       </div>
 
-      <button className="homeBanner__accessButton">Access Now</button>
+      <button
+        onClick={() => dispatch(showForm(true))}
+        className="homeBanner__accessButton"
+      >
+        Access Now
+      </button>
+      {data && <Authantication />}
     </div>
   );
 };

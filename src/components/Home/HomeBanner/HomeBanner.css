@@ -46,7 +46,7 @@
     left: -0.5%;
     width: 101%;
     height: 110%;
-    z-index: -1;
+    z-index: -199;
     background: linear-gradient(to right, #f32170,
             #ff6b08, #cf23cf, #eedd44);
     ;

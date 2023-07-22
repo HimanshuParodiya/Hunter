@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -7,7 +8,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <Home />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Router>
       <Footer />
     </>
   );
